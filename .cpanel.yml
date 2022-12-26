@@ -3,5 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/pkqwctum/demo-car-dealer/
     - /bin/cp -rf index.html $DEPLOYPATH
+    - /bin/cp -rf fordranger2023.html $DEPLOYPATH
     - /bin/cp -rf css $DEPLOYPATH
-    - /bin/cp -rf images $DEPLOYPATH
+    - /bin/cp -rf images $DEPLOYPATHß
