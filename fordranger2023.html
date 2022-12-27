@@ -24,12 +24,34 @@
 <body>
     <div id="content">
         <!-- banner -->
-        <!-- class: container-fluid = full man hinh -->
-        <section class="container" id="banner">
-            <div class="container text-white text-start ">
-                <div id="carousel-banner" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
+        <section class="container-fluid" id="banner">
+            <div id="carouselCar" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCar" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCar" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCar" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="/images/fordranger2023banner.webp" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block text-start py-5">
+                            <h1>Ford Ranger 2023</h1>
+                            <h4>Xe Bán tải Thế hệ Mới</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="/images/fordranger2023banner-2.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block text-start py-5">
+                            <h1>Ford Ranger 2023</h1>
+                            <h4>Xe Bán tải Thế hệ Mới</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/fordranger2023banner-3.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block text-start py-5">
                             <h1>Ford Ranger 2023</h1>
                             <h4>Xe Bán tải Thế hệ Mới</h4>
                         </div>
@@ -38,15 +60,15 @@
             </div>
         </section>
         <!-- request form -->
-        <section class="container-fluid" id="requestform">
+        <section class="container" id="requestform">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-lg-9 col-md-8 col-sm-12">
+                    <div class="col">
                         <div class="text-center">
-                            <h1 class="text-blue">Yêu cầu báo giá</h1>
+                            <h1 class="text-blue">Yêu cầu báo giá xe Ford Ranger 2023</h1>
                             <sub class="text-grey">Yêu cầu báo giá theo lựa chọn</sub>
                         </div>
-                        <div class="text-grey">
+                        <form class="text-grey">
                             <h4 class="text-blue">Thông tin</h4>
                             <label for="name">Họ và tên</label>
                             <input type="text" name="name">
@@ -54,18 +76,29 @@
                             <input type="text" name="email">
                             <label for="phone">Điện thoại di động</label>
                             <input type="text" name="phone">
+                            <h4 class="text-blue">Chọn đại lý gần bạn nhất</h4>
+                            <label for="name">Tỉnh/Thành phố</label>
+                            <input type="text" name="city">
+                            <label for="name">Quận/Huyện</label>
+                            <input type="text" name="district">
                             <h4 class="text-blue">Quyền sử dụng dữ liệu cá nhân</h4>
                             <input type="checkbox" name="info-right">
                             <span class="text-grey">Tôi đồng ý và chấp thuận rằng thông tin cá nhân của tôi sẽ được
                                 tiết lộ cho Công ty TNHH Ford Việt Nam (Ford), Đại lý Ủy quyền và các bên thứ ba liên
                                 quan khác cung cấp (hoặc hỗ trợ cung cấp) sản phẩm và dịch vụ cho mục đích và theo chính
-                                sách bảo mật của Ford (chi tiết tại đây)</span>
+                                sách bảo mật của Ford (chi tiết tại <a
+                                    href="https://www.ford.com.vn/privacy-disclaimer/" class="text-blue">đây</a>)</span>
                             <input type="submit">
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
+    </div>
+    <div class="container" id="footer">
+        <p class="text-grey text-center">
+            Copyright &copy; 2023 by carremotedealer.com
+        </p>
     </div>
 
 
