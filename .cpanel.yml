@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pkqwctum/demo-car-dealer/
+    - export DEPLOYPATH=/home/pkqwctum/remotecardealer.com/
     - /bin/cp -rf index.html $DEPLOYPATH
     - /bin/cp -rf fordranger2023.html $DEPLOYPATH
     - /bin/cp -rf css $DEPLOYPATH
