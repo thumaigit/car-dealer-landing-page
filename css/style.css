@@ -74,7 +74,7 @@ body {
   margin-bottom: 1rem;
 }
 
-#requestform input[type="submit"] {
+#requestform button[type="submit"] {
   color: white;
   background-color: var(--primary-blue);
   border: none;
